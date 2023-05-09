@@ -23,6 +23,8 @@
 	</head>
 	<body class="bg-secondary text-light">
 		<div class="container">
+			The date is...
+			<p id="date"></p>
 			<h2><u>The Ohm's Law Equation</u></h2>
 				<p>An electric circuit is formed when a conductive path is created to allow electric charge to continuously move. This continuous movement of electric charge through the conductors of a circuit is called a current, and it is often referred to in terms of “flow,” just like the flow of a liquid through a hollow pipe.</p>
 			<img src="https://www.allaboutcircuits.com/uploads/articles/units-measurement-electrical-current.png" id="figure1">
@@ -50,6 +52,9 @@
 		</div>
 		
 			<script type="text/javascript">
+				const DT = new Date();//constant declaration for date
+				document.getElementById('date').innerHTML = DT;
+
 				function Calculate(){
 					let V = document.getElementById("V").value;
 					let R = document.getElementById("R").value;
